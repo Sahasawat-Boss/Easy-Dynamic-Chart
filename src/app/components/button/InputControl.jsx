@@ -22,7 +22,7 @@ export default function InputControl({ value, setValue }) {
     };
 
     return (
-        <div className="mb-8 flex flex-col items-center gap-4">
+        <div className="mb-8 flex flex-col items-center gap-4 animate-fade-in-left">
             <label htmlFor="inputValue" className="text-lg font-semibold text-gray-800">
                 Enter a value (0-100)
             </label>

@@ -11,7 +11,7 @@ export default function ReloadExport() {
     };
 
     return (
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex justify-center gap-4 mb-8 animate-fade-in-right">
             <button
                 onClick={handleReload}
                 className="px-1 py-1 rounded bg-blue-500 hover:bg-blue-200 text-blue-700 font-medium shadow text-2xl hover"

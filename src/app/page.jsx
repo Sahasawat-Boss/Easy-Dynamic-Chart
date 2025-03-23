@@ -29,14 +29,15 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-r from-indigo-100 to-white p-8">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">
+        <h1 className="text-2xl md:text-3xl font-bold text-center mb-4 text-indigo-700 animate-fade-in-down drop-shadow-[0_5px_10px_rgba(79,70,229,0.3)]">
           Real-time Dynamic Chart
         </h1>
+
 
         <InputControl value={value} setValue={setValue} />
         <ReloadExport />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 animate-fade-in-up">
           <PieChartBox data={pieData} />
           <RadarChartBox data={lineData} />
           <PieChartWithNeedle value={value} />

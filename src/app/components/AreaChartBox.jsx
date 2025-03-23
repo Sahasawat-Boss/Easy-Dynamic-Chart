@@ -12,7 +12,7 @@ import {
 
 export default function AreaChartBox({ data }) {
     return (
-        <div className="bg-white p-6 rounded-xl shadow-lg">
+        <div className="bg-white p-6 rounded shadow-lg hover">
             <h2 className="text-xl font-semibold mb-4 text-gray-800">Area Chart</h2>
             <ResponsiveContainer width="100%" height={300}>
                 <AreaChart data={data}>

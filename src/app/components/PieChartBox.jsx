@@ -7,7 +7,7 @@ const COLORS = ["#8884d8", "#82ca9d", "#ffc658", "#ff8042"];
 
 export default function PieChartBox({ data }) {
     return (
-        <div className="bg-white p-6 rounded-xl shadow-lg">
+        <div className="bg-white p-6 rounded shadow-lg hover">
             <h2 className="text-xl font-semibold mb-4 text-gray-800">Pie Chart</h2>
             <ResponsiveContainer width="100%" height={300}>
                 <PieChart>

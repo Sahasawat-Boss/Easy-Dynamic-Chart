@@ -31,7 +31,7 @@ export default function PieChartWithNeedle({ value }) {
     ];
 
     return (
-        <div className="bg-white p-6 rounded-xl shadow-lg">
+        <div className="bg-white p-6 rounded shadow-lg hover">
             <h2 className="text-xl font-semibold mb-4 text-gray-800">
                 Gauge-Style Pie with Needle
             </h2>

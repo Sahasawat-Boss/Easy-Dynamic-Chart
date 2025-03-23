@@ -13,7 +13,7 @@ const COLORS = ["#8884d8", "#82ca9d", "#ffc658", "#ff8042"];
 
 export default function PieChartWithPaddingAngle({ data }) {
     return (
-        <div className="bg-white p-6 rounded-xl shadow-lg">
+        <div className="bg-white p-6 rounded shadow-lg hover">
             <h2 className="text-xl font-semibold mb-4 text-gray-800">
                 Pie Chart with Padding Angle
             </h2>

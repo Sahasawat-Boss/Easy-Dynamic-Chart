@@ -40,9 +40,9 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 animate-fade-in-up">
           <PieChartBox data={pieData} />
           <RadarChartBox data={lineData} />
-          <PieChartWithNeedle value={value} />
-          <AreaChartBox data={lineData} />
           <BarChartBox data={lineData} />
+          <AreaChartBox data={lineData} />
+          <PieChartWithNeedle value={value} />
           <LineChartBox data={lineData} />
 
         </div>

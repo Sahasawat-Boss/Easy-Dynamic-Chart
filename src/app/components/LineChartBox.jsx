@@ -13,7 +13,7 @@ import {
 
 export default function LineChartBox({ data }) {
     return (
-        <div className="bg-white p-6 rounded-xl shadow-lg">
+        <div className="bg-white p-6 rounded shadow-lg hover">
             <h2 className="text-xl font-semibold mb-4 text-gray-800">Line Chart</h2>
             <ResponsiveContainer width="100%" height={300}>
                 <LineChart data={data}>

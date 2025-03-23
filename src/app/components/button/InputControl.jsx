@@ -27,10 +27,10 @@ export default function InputControl({ value, setValue }) {
                 Enter a value (0-100)
             </label>
 
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 ">
                 <button
                     onClick={decrease}
-                    className="px-3 py-1 rounded-md bg-red-100 hover:bg-red-200 text-red-600 text-xl font-bold shadow"
+                    className="px-3 py-1 rounded-md bg-red-100 hover:bg-red-200 text-red-600 text-xl font-bold shadow hover"
                 >
                     −
                 </button>
@@ -40,12 +40,12 @@ export default function InputControl({ value, setValue }) {
                     type="text"
                     value={value}
                     onChange={handleInputChange}
-                    className="text-center px-4 py-1 border border-gray-300 rounded-lg w-20 shadow-md text-lg"
+                    className="text-center px-4 py-1 border border-gray-300 rounded-lg w-20 shadow-md text-lg hover"
                 />
 
                 <button
                     onClick={increase}
-                    className="px-3 py-1 rounded-md bg-green-100 hover:bg-green-200 text-green-600 text-xl font-bold shadow"
+                    className="px-3 py-1 rounded-md bg-green-100 hover:bg-green-200 text-green-600 text-xl font-bold shadow hover"
                 >
                     +
                 </button>

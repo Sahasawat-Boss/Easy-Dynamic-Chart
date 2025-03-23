@@ -2,14 +2,19 @@
 "use client";
 
 import { useState } from "react";
-import InputControl from "./components/InputControl";
+import InputControl from "./components/button/InputControl";
+import RadarChartBox from "./components/RadarChartBox";
 import LineChartBox from "./components/LineChartBox";
-import PieChartBox from "./components/PieChartBox";
 import BarChartBox from "./components/BarChartBox";
 import AreaChartBox from "./components/AreaChartBox";
+import PieChartBox from "./components/PieChartBox";
+import ReloadExport from "./components/button/Reload-Export";
+import PieChartWithNeedle from "./components/PieChartWithNeedle"; //
+//import PieChartWithPaddingAngle from "./components/PieChartWithPaddingAngle";
+
 
 export default function Home() {
-  const [value, setValue] = useState(10);
+  const [value, setValue] = useState(35); //Default Value
 
   const lineData = Array.from({ length: 10 }, (_, i) => ({
     name: `Point ${i + 1}`,
@@ -29,12 +34,16 @@ export default function Home() {
         </h1>
 
         <InputControl value={value} setValue={setValue} />
+        <ReloadExport />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <PieChartBox data={pieData} />
+          <PieChartBox data={pieData}/>
+          <RadarChartBox data={lineData} />
+          <PieChartWithNeedle value={value} />
           <AreaChartBox data={lineData} />
           <BarChartBox data={lineData} />
           <LineChartBox data={lineData} />
+
         </div>
       </div>
     </main>

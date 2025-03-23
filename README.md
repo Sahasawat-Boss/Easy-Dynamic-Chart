@@ -1,13 +1,17 @@
-## Easy Dynamic Chart
+# Easy Dynamic Chart
 
 A beautifully animated and real-time charting dashboard built with Next.js 14, Tailwind CSS v4, and Recharts.
 
-![Screenshot 2025-03-23 120026](https://github.com/user-attachments/assets/2adbbfb8-1bef-4aaa-91c4-f4cb99c36003)
+![Screenshot 2025-03-23 120951](https://github.com/user-attachments/assets/a8422c52-e170-4db2-8c95-a10f4b147c71)
 
 
- Features
+ ## Features
+ 
 🔢 Input-based chart updates – Charts auto-update when you type or click
+
 🖨️ One-click Print / PDF Export + 🔄 Page Reload
+
 📱 Fully responsive and mobile-friendly
 
-![Screenshot 2025-03-23 120131](https://github.com/user-attachments/assets/5c132729-a339-44ad-95dd-97d822665c76)
+
+![Screenshot 2025-03-23 121029](https://github.com/user-attachments/assets/3ad08a5e-cf04-47bc-bd42-e6ae88e8d73a)

@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+/* Apply Merriweather everywhere */
+:root {
+  --font-family-base: var(--font-merriweather);
+}
+
+body {
+  font-family: var(--font-family-base), serif;
+}
+
+.hover{
+  @apply hover:cursor-pointer hover:scale-105 transform duration-200
+}

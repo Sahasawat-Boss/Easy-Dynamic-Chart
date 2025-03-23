@@ -1,27 +1,22 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Merriweather } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Load Merriweather from Google Fonts
+const merriweather = Merriweather({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-merriweather",
 });
 
 export const metadata = {
   title: "Next-Chart",
-  description: "Next-Chart",
+  description: "Stylish dynamic charts with modern fonts",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={merriweather.variable}>
+      <body>
         {children}
       </body>
     </html>

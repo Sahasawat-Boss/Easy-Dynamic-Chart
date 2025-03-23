@@ -37,7 +37,7 @@ export default function Home() {
         <ReloadExport />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <PieChartBox data={pieData}/>
+          <PieChartBox data={pieData} />
           <RadarChartBox data={lineData} />
           <PieChartWithNeedle value={value} />
           <AreaChartBox data={lineData} />
